@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sola Shin | Data Science Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sola Shin | Data Scientist (Supply Chain & Operations)</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 920px; margin: 40px auto; padding: 0 18px; }
+    h1 { margin-bottom: 6px; }
+    .subtitle { color: #444; margin-top: 0; }
+    .tag { display: inline-block; padding: 4px 10px; border: 1px solid #ddd; border-radius: 999px; margin: 6px 6px 0 0; font-size: 14px; }
+    .card { border: 1px solid #eee; border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .muted { color: #555; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 18px; }
+  </style>
 </head>
+
 <body>
-  <h1>Sola Shin</h1>
-  <p>
-    MS in Applied Data Science @ University of Chicago <br>
-    Interests: Supply Chain, Operations, Data Analytics
-  </p>
+  <header>
+    <h1>Sola Shin</h1>
+    <p class="subtitle">
+      Data Science (Supply Chain & Operations) • MS Candidate @ University of Chicago
+    </p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Project 1:</strong> (Coming Soon)<br>
-      Short description of the problem and analysis.
-    </li>
-    <li>
-      <strong>Project 2:</strong> (Coming Soon)
-    </li>
-  </ul>
+    <div>
+      <span class="tag">Python</span>
+      <span class="tag">R</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Statistics / GLMs</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Experimentation</span>
+      <span class="tag">Forecasting</span>
+      <span class="tag">Dashboarding</span>
+    </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Python, R, SQL</li>
-    <li>Statistical Modeling, EDA</li>
-  </ul>
+    <p class="muted">
+      I build analytics and predictive models that translate messy operational data into decisions—especially in logistics,
+      demand planning, and end-to-end supply chain performance.
+    </p>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://github.com/SolaShinData">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-  </ul>
+    <p>
+      <strong>Links:</strong>
+      <a href="https://github.com/SolaShinData" target="_blank" rel="noreferrer">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/sola-shin-data/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Featured Projects</h2>
+
+    <div class="card">
+      <h3>Crash Risk & Severe Outcome Modeling (GLMs)</h3>
+      <p class="muted">
+        Built count models to explain daily crash patterns and quantify how weather/road conditions relate to severe outcomes.
+      </p>
+      <ul>
+        <li><strong>Methods:</strong> Poisson / Negative Binomial, model diagnostics, interpretable effects</li>
+        <li><strong>Outputs:</strong> clear coefficient interpretation + plots for non-technical stakeholders</li>
+        <li><strong>Status:</strong> Add repo link (coming soon)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Device Financing Delinquency Prediction</h3>
+      <p class="muted">
+        Developed a risk modeling workflow on anonymized 24-month financing records to support approval decisions.
+      </p>
+      <ul>
+        <li><strong>Methods:</strong> EDA, leakage-safe splits, baseline + ML models, thresholding</li>
+        <li><strong>Outputs:</strong> recommendation-ready metrics (precision/recall, business trade-offs)</li>
+        <li><strong>Status:</strong> Add repo link (coming soon)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Supply Chain Analytics Automation (Industry Project)</h3>
+      <p class="muted">
+        Automated reporting pipelines for orders/returns/CS/vendor operations to improve operational visibility and decision speed.
+      </p>
+      <ul>
+        <li><strong>Tools:</strong> Python, SQL, (optional) Apps Script</li>
+        <li><strong>Outputs:</strong> repeatable data pipeline + KPI reporting</li>
+        <li><strong>Status:</strong> Add repo link (coming soon)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I’m Looking For</h2>
+    <ul>
+      <li>Data Scientist / Analytics roles in supply chain, operations, logistics, or e-commerce</li>
+      <li>Projects where modeling + stakeholder communication both matter</li>
+    </ul>
+  </section>
+
+  <footer class="muted">
+    <p>Last updated: <span id="date"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("date").textContent = new Date().toISOString().slice(0, 10);
+  </script>
 </body>
 </html>
